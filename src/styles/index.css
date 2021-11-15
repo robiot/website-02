@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer utilities {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .h-30rem {
+    min-height: 30rem;
+  }
+
+  .w-description {
+    width: 35rem;
+  }
+
+  .navbar {
+    transition: background-color 0.2s ease;
+  }
+  .navbar.active {
+    @apply bg-navbar-active;
+    transition: background-color 0.2s ease;
+  }
+
+  .navbar-item {
+    @apply flex items-center h-full hover:bg-gray-700 bg-opacity-5 p-4 rounded-md;
+    transition: background-color 0.2s ease;
+  }
+}
