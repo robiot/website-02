@@ -69,7 +69,7 @@ export default function Nav() {
           </Navbar_item>
 
           <Navbar_item
-            href="https://github.com/robiot"
+            href="https://github.com/robiot/robiotdev"
             navbar={navbar}
             external={true}
           >
