@@ -14,6 +14,7 @@ export default function Layout({ children, title }) {
         <meta property="og:url" content="https://robiot.dev" />
         <meta property="og:description" content="Hi, I'm Robiot. I'm a software developer" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://robiot.dev" />
       </Head>
 
       {children}
