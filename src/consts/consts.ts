@@ -72,7 +72,7 @@ export const projects = [
     title: "AlphaClicker",
     description:
       "A autoclicker for windows with a more modern ui than you will see on other windows autoclickers.",
-    image: "/images/alphaclicker.png",
+    image: "/images/alphaclicker1.png",
     website: null,
     source: "https://github.com/robiot/AlphaClicker",
   },
