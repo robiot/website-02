@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Link from "next/link";
-import { GitHub, Twitter, YouTube } from "@material-ui/icons";
+import { GitHub, Twitter } from "@material-ui/icons";
 import { Navbar_item } from "./Navbar_item";
 import Router from "next/router";
 
@@ -53,14 +52,6 @@ export default function Nav() {
 
         <div className="flex h-full">
           <Navbar_item
-            href="https://youtube.com/c/robiot"
-            navbar={navbar}
-            external={true}
-          >
-            <YouTube width="0" />
-          </Navbar_item>
-
-          <Navbar_item
             href="https://twitter.com/realrobiot"
             navbar={navbar}
             external={true}
@@ -69,7 +60,7 @@ export default function Nav() {
           </Navbar_item>
 
           <Navbar_item
-            href="https://github.com/robiot/robiotdev"
+            href="https://github.com/robiot/website"
             navbar={navbar}
             external={true}
           >
