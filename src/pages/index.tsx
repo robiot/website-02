@@ -8,11 +8,9 @@ import ContactItem from "../components/Contact_item";
 import { GitHub, Twitter, YouTube, Mail } from "@material-ui/icons";
 import Typist from "react-typist";
 
-function getYear() {
-  return new Date().getFullYear();
-}
+const currentYear = new Date().getFullYear();
 
-function SectionTitle({ children }) {
+const SectionTitle = ({ children }) => {
   return (
     <div>
       <div
@@ -20,15 +18,12 @@ function SectionTitle({ children }) {
         data-aos="zoom-in-right"
         data-aos-duration="250"
       />
-      <div
-        className="font-semibold text-4xl text-gray-200"
-        data-aos="fade-left"
-      >
+      <div className="font-semibold text-4xl text-gray-200" data-aos="fade-right">
         {children}
       </div>
     </div>
   );
-}
+};
 
 export default function Home() {
   const [activeHover, setActiveHover] = useState<null | {
@@ -46,8 +41,8 @@ export default function Home() {
 
       {/* Experience card */}
       {activeHover && (
-        <div className="hidden xl:block fixed top-20 right-10 shadow-project rounded-md ">
-          <div className="w-80 m-auto shadow-project rounded-md p-4 bg-gray-900">
+        <div className="fixed top-20 right-0 lg:right-10 shadow-project rounded-md z-50 bg-gray-900">
+          <div className="w-full lg:w-80 m-auto shadow-project rounded-md p-4 bg-gray-900">
             <div className="text-center text-xl font-semibold">
               {activeHover.title}
             </div>
@@ -145,7 +140,7 @@ export default function Home() {
                 <div
                   className="w-96 shadow-project rounded-md"
                   key={i}
-                  data-aos="zoom-in-left"
+                  data-aos="zoom-in-right"
                 >
                   <img
                     src={p.image}
@@ -217,7 +212,7 @@ export default function Home() {
       </div>
 
       <div className="mt-48 bg-navbar-active h-10 flex justify-center items-center">
-        Copyright © Robiot {getYear()}
+        Copyright © Robiot {currentYear}
       </div>
     </Layout>
   );
