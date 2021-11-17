@@ -85,3 +85,13 @@ export const projects = [
     source: "https://github.com/robiot/zash",
   },
 ];
+
+
+export const socials = {
+  github: "https://github.com/robiot",
+  repo: "https://github.com/robiot/website",
+  twitter: "https://twitter.com/notrobiot",
+  discord: "https://discord.gg/3Pf8Xu5Kjm",
+  youtube: "https://youtube.com/c/robiot",
+  email: "me@robiot.dev"
+}

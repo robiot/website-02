@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { GitHub, Twitter } from "@material-ui/icons";
 import { Navbar_item } from "./Navbar_item";
 import Router from "next/router";
+import { socials } from "../consts/consts";
 
 export default function Nav() {
   const [navbar, setNavbar] = useState(false);
@@ -52,7 +53,7 @@ export default function Nav() {
 
         <div className="flex h-full">
           <Navbar_item
-            href="https://twitter.com/realrobiot"
+            href={socials.twitter}
             navbar={navbar}
             external={true}
           >
@@ -60,7 +61,7 @@ export default function Nav() {
           </Navbar_item>
 
           <Navbar_item
-            href="https://github.com/robiot/website"
+            href={socials.repo}
             navbar={navbar}
             external={true}
           >

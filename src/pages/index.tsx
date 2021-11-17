@@ -7,6 +7,7 @@ import { projects, experiences } from "../consts/consts";
 import ContactItem from "../components/Contact_item";
 import { GitHub, Twitter, YouTube, Mail } from "@material-ui/icons";
 import Typist from "react-typist";
+import { socials } from "../consts/consts";
 
 const currentYear = new Date().getFullYear();
 
@@ -187,22 +188,22 @@ export default function Home() {
             </div>
 
             <div className="flex flex-wrap gap-4 mt-10">
-              <ContactItem href="mailto:me@robiot.dev">
+              <ContactItem href={`mailto:${socials.email}`}>
                 <Mail width="0" className="mb-1 mr-2" />
                 Email
               </ContactItem>
-              <ContactItem href="https://github.com/robiot">
+              <ContactItem href={socials.github}>
                 <GitHub width="0" className="mb-1 mr-2" />
                 Github
               </ContactItem>
-              <ContactItem href="https://youtube.com/c/robiot">
+              <ContactItem href={socials.youtube}>
                 <YouTube width="0" className="mb-1 mr-2" />
                 Youtube
               </ContactItem>
-              <ContactItem href="https://discord.gg/3Pf8Xu5Kjm">
+              <ContactItem href={socials.discord}>
                 Discord
               </ContactItem>
-              <ContactItem href="https://twitter.com/realrobiot">
+              <ContactItem href={socials.twitter}>
                 <Twitter width="0" className="mb-1 mr-2" />
                 Twitter
               </ContactItem>
