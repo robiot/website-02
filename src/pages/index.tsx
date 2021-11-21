@@ -93,7 +93,7 @@ export default function Home() {
               Hi I'm Robiot. I do software development as a hobby and I really
               enjoy it. I have been coding seriously since 2020, but I've made
               some small projects before. I also practice some ethical hacking
-              on my free time.
+              in my free time.
             </p>
             <p className="mt-2">
               I upload most of my projects to github, where some projects got
