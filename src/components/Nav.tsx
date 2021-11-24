@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { GitHub, Twitter } from "@material-ui/icons";
-import { Navbar_item } from "./Navbar_item";
+import { NavbarItem } from "./NavbarItem";
 import Router from "next/router";
 import { socials } from "../consts/consts";
 
-export default function Nav() {
+const Nav = () => {
   const [navbar, setNavbar] = useState(false);
 
   const changeNavbar = () => {
@@ -38,37 +38,31 @@ export default function Nav() {
               Home
             </div>
 
-            <Navbar_item href="#about" navbar={navbar}>
+            <NavbarItem href="#about" navbar={navbar}>
               <div className="text-lg text-gray-300">About</div>
-            </Navbar_item>
+            </NavbarItem>
 
-            <Navbar_item href="#projects" navbar={navbar}>
+            <NavbarItem href="#projects" navbar={navbar}>
               <div className="text-lg text-gray-300">Projects</div>
-            </Navbar_item>
-            <Navbar_item href="#contact" navbar={navbar}>
+            </NavbarItem>
+            <NavbarItem href="#contact" navbar={navbar}>
               <div className="text-lg text-gray-300">Contact</div>
-            </Navbar_item>
+            </NavbarItem>
           </div>
         </div>
 
         <div className="flex h-full">
-          <Navbar_item
-            href={socials.twitter}
-            navbar={navbar}
-            external={true}
-          >
+          <NavbarItem href={socials.twitter} navbar={navbar} external={true}>
             <Twitter width="0" />
-          </Navbar_item>
+          </NavbarItem>
 
-          <Navbar_item
-            href={socials.repo}
-            navbar={navbar}
-            external={true}
-          >
+          <NavbarItem href={socials.repo} navbar={navbar} external={true}>
             <GitHub width="0" />
-          </Navbar_item>
+          </NavbarItem>
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default Nav;

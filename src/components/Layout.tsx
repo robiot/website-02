@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 
-export default function Layout({ children, title }) {
+const Layout = ({ children, title }) => {
   return (
     <div className="flex flex-col min-h-screen bg-gray-900 text-white font-body">
       <Head>
@@ -48,3 +48,5 @@ export default function Layout({ children, title }) {
     </div>
   );
 }
+
+export default Layout;

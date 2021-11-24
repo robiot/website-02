@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ContactItem({ children, href }) {
+const ContactItem = ({ children, href }) => {
   return (
     <div data-aos="flip-left">
       <a
@@ -13,3 +13,5 @@ export default function ContactItem({ children, href }) {
     </div>
   );
 }
+
+export default ContactItem; 

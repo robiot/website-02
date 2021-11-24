@@ -4,7 +4,7 @@ import Link from "next/link";
 import Aos from "aos";
 import { useEffect, useState } from "react";
 import { projects, experiences } from "../consts/consts";
-import ContactItem from "../components/Contact_item";
+import ContactItem from "../components/ContactItem";
 import { GitHub, Twitter, YouTube, Mail } from "@material-ui/icons";
 import Typist from "react-typist";
 import { socials } from "../consts/consts";
@@ -26,7 +26,7 @@ const SectionTitle = ({ children }) => {
   );
 };
 
-export default function Home() {
+const Home = () => {
   const [activeHover, setActiveHover] = useState<null | {
     title: string;
     desc: string;
@@ -218,3 +218,5 @@ export default function Home() {
     </Layout>
   );
 }
+
+export default Home;

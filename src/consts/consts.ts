@@ -94,4 +94,4 @@ export const socials = {
   discord: "https://discord.gg/3Pf8Xu5Kjm",
   youtube: "https://youtube.com/c/robiot",
   email: "me@robiot.dev"
-}
+};

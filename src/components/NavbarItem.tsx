@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-export function Navbar_item({
+export const NavbarItem = ({
   children,
   href,
   navbar,
@@ -11,7 +11,7 @@ export function Navbar_item({
   href: string;
   navbar: boolean;
   external?: boolean;
-}) {
+}) => {
   const element: JSX.Element = external ? (
     <a
       href={href}
@@ -27,4 +27,4 @@ export function Navbar_item({
   );
 
   return element;
-}
+};
